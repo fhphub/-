@@ -1,0 +1,81 @@
+/*图片放大镜*/
+
+
+/*头部*/
+
+.preview-header {
+    display: flex;
+    padding: 10px;
+}
+
+
+/*预览区域*/
+
+.preview-content {
+    display: none;
+    align-items: flex-start;
+}
+
+
+/*原始图片*/
+
+.preview-content .origin {
+    max-width: 350px;
+    margin: 30px 0px 0px 10px;
+    position: relative;
+    box-shadow: 3px 3px 10px 0 #111111;
+    /*给图片施加阴影效果 */
+    -webkit-box-shadow: 3px 3px 10px 0 #111111;
+    /*兼容性处理*/
+    -moz-box-shadow: 3px 3px 10px 0 #111111;
+    overflow: hidden;
+}
+
+.preview-content .origin img {
+    width: 100%;
+}
+
+
+/*滑块*/
+
+.origin .scale-section {
+    display: none;
+    /*初始隐藏*/
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 175px;
+    height: 175px;
+    background: #000;
+    opacity: 0.3;
+    cursor: move;
+    /*改变鼠标的形状*/
+}
+
+
+/*右侧放大区域的宽高是和滑块成比例的*/
+
+.preview-content .target {
+    display: none;
+    /*初始隐藏*/
+    width: 350px;
+    height: 350px;
+    margin: 30px 0px 0px 30px;
+    position: relative;
+    box-shadow: 3px 3px 10px 0 #111111;
+    /*给图片施加阴影效果 */
+    -webkit-box-shadow: 3px 3px 10px 0 #111111;
+    /*兼容性处理*/
+    -moz-box-shadow: 3px 3px 10px 0 #111111;
+    overflow: hidden;
+}
+
+
+/*放大后的图片*/
+
+.target img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+}

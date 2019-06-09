@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<!--放大镜-->
+<div class="preview">
+    <div class="preview-header">
+        <!--选择本地图片-->
+        <div class="choose-image">
+            <lable for="fileInput">选择图片</lable>
+            <input type="file" id="fileInput">
+        </div>
+        <!--调整缩放倍数-->
+        <div class="scale">
+            <lable for="scaleNum">设置放大倍数</lable>
+            <input type="number" id="scaleNum" value="2">
+        </div>
+    </div>
+    <!--预览区域-->
+    <div class="preview-content">
+        <!--原图-->
+        <div class="origin">
+            <img src="" alt="" id="origin-image">
+            <!--滑块-->
+            <div class="scale-section"></div>
+        </div>
+        <!--放大后的图片-->
+        <div class="target">
+            <img src="" alt="" id="target-image">
+        </div>
+    </div>
+</div>
+
+</html>
